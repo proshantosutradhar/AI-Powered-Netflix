@@ -23,7 +23,7 @@ function Signin() {
   };
 
   const handleSubmit = () => {
-    const nameValue = !signIn ? name.current?.value : null;
+    const nameValue = !signIn ? name.current.value : null;
 
     const message = formValidate(
       nameValue,
@@ -43,7 +43,6 @@ function Signin() {
           // Signed up
 
           const user = userCredential.user;
-          navigate('/browse')
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -59,7 +58,6 @@ function Signin() {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          navigate('/browse')
         })
         .catch((error) => {
           const errorCode = error.code;

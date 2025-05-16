@@ -27,3 +27,8 @@
     - Signup & Signin feature implemented
     - Created redux store with userSlice
     - Signout implemented
+    - tmbd api integrated
+    - Browse page hero section designed
+    - Browse page horizontal movie sections implemented
+
+
