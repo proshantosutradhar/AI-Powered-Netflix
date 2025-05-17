@@ -6,7 +6,8 @@ import { APIOptions } from '../component/utils/apiHeader';
 function useTrailer(id) {
     
   const dispatch = useDispatch();
-  
+     const {trailer} = useSelector((store)=>store.movies)
+
       const getTrailer = async()=>{
           const data = await fetch(`https://api.themoviedb.org/3/movie/${id}/videos`,APIOptions);
           const json = await data.json();
@@ -17,7 +18,7 @@ function useTrailer(id) {
       }
   
       useEffect(()=>{
-          getTrailer()
+          !trailer && getTrailer()
       }, [])
 }
 

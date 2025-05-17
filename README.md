@@ -30,5 +30,10 @@
     - tmbd api integrated
     - Browse page hero section designed
     - Browse page horizontal movie sections implemented
+    - GPT component created
+    - SearchBar added and results showing function added
+    - api secured using .env file setup
+    - First choice was openAi to get movie recommendation results but openAi api isnt responding that why i used Cohere Ai api for chat recommendation. heres the link of the Ai "https://dashboard.cohere.com/"
+    - 
 
 
