@@ -2,6 +2,6 @@ export const APIOptions = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer'+ process.env.REACT_APP_tmdb_Api 
+    Authorization: `Bearer ${import.meta.env.VITE_TMDB_API}`
   }
 };

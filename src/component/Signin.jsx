@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 function Signin() {
   const [signIn, setSignIn] = useState(true);
   const [errorMessage, setErrorMessage] = useState(true);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const email = useRef(null);
   const name = useRef(null);
 
@@ -69,11 +69,11 @@ function Signin() {
 
   return (
     <div className="overflow-y-auto w-full min-h-screen relative">
-      <div className="bg-black w-[100%] min-h-[121.5vh] z-1 absolute top-0 opacity-60"></div>
+      <div className="bg-black w-full min-h-[130vh] md:min-h-[121.5vh] z-1 absolute top-0 opacity-60"></div>
       <Header />
       <div>
         <img
-          className="w-[100vw] min-h-screen absolute"
+          className="w-[100vw] object-cover md:min-h-[100vh] min-h-[130vh] absolute"
           src={background}
           alt=""
         />
@@ -81,7 +81,7 @@ function Signin() {
 
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="w-4/12 z-50 absolute bg-[rgba(0,0,0,0.7)] p-12 text-white mt-30 mx-auto right-0 left-0"
+        className="w-[90%] md:w-4/12 z-50 absolute bg-[rgba(0,0,0,0.7)] p-12 text-white mt-40 md:mt-30 mx-auto right-0 left-0"
       >
         <h3 className="text-3xl font-bold mb-8">
           {signIn ? "Sign In" : "Sign Up"}

@@ -6,8 +6,8 @@ const SecondContainer = () => {
   const movies = useSelector((store) => store.movies);
 
   return (
-    <div className="text-white bg-black pb-8">
-      <div className="-mt-53 z-100 relative">
+    <div className="text-white bg-black md:px-18 w-full pb-8">
+      <div className=" md:-mt-53 w-full z-100 relative">
         <HorizontalCard
           title={"Now Playing"}
           movies={movies?.nowPlayingMovies}
